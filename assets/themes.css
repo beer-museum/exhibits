@@ -1,0 +1,279 @@
+/* ==========================================================
+   Темы заводов — у каждого производителя свой зал
+   ========================================================== */
+
+/* 1. «Неман» — Хрустальный зал ------------------------------ */
+.theme-neman{--bg:#0a1d20;--ink:#e3f2ef;--muted:#9cc3bd;--accent:#7fe0cf;--accent2:#d4fff7;--panel:rgba(127,224,207,.06);--line:rgba(127,224,207,.22);--font-head:"Forum",serif;--font-body:"Spectral",serif;--head-weight:400;--radius:2px;--stroke:#bff3ea;--mark-bg:linear-gradient(transparent 55%,rgba(127,224,207,.32) 55%);--mark-ink:#fff;--bar-bg:rgba(6,20,22,.75);--photo-bg:radial-gradient(circle at 50% 35%,rgba(191,243,234,.22),transparent 60%),linear-gradient(160deg,#0f3036,#071416)}
+.theme-neman{background-image:repeating-conic-gradient(from 45deg,rgba(255,255,255,.028) 0 25%,transparent 0 50%),radial-gradient(1200px 600px at 80% -10%,rgba(127,224,207,.18),transparent 70%);background-size:46px 46px,auto;background-attachment:fixed}
+.theme-neman h1{background:linear-gradient(100deg,#fff 0%,#8fe9da 35%,#fff 50%,#7fd6c8 70%,#e9fffb 100%);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:clamp(2.4rem,5.6vw,4.6rem)}
+.theme-neman .keyfacts li{border:1px solid var(--line);clip-path:polygon(14px 0,calc(100% - 14px) 0,100% 14px,100% calc(100% - 14px),calc(100% - 14px) 100%,14px 100%,0 calc(100% - 14px),0 14px);background:linear-gradient(135deg,rgba(127,224,207,.14),rgba(127,224,207,.03))}
+.theme-neman .photo{border:1px solid var(--line);clip-path:polygon(24px 0,calc(100% - 24px) 0,100% 24px,100% calc(100% - 24px),calc(100% - 24px) 100%,24px 100%,0 calc(100% - 24px),0 24px)}
+.theme-neman .passport{border:1px solid var(--line);backdrop-filter:blur(6px)}
+.theme-neman .story .text p:first-child::first-letter{font-family:"Forum",serif;float:left;font-size:4.2em;line-height:.8;margin:.08em .1em 0 0;color:var(--accent)}
+
+/* 2. Первомайский — Олимпиада-80 ----------------------------- */
+.theme-pervomay{--bg:#fbf5ec;--ink:#2a1212;--muted:#7c5a55;--accent:#b5122f;--accent2:#c99700;--panel:#fff;--line:rgba(181,18,47,.18);--font-head:"Dela Gothic One",sans-serif;--font-body:"Golos Text",sans-serif;--head-weight:400;--radius:6px;--stroke:#7d0a1e;--mark-bg:#ffe08a;--bar-bg:#8d0d24;--photo-bg:radial-gradient(circle at 50% 42%,#ffffff 0,#fbeee9 45%,#efcfc8 100%)}
+.theme-pervomay h1{font-size:clamp(2rem,4.6vw,3.9rem);overflow-wrap:anywhere}
+.theme-pervomay .hero{background:#b5122f;color:#fff;padding:clamp(1.6rem,4vw,3.2rem);border-radius:10px;overflow:hidden}
+.theme-pervomay .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:linear-gradient(90deg,#0081c8 0 20%,#fcb131 20% 40%,#1b1b1b 40% 60%,#00a651 60% 80%,#ee334e 80%)}
+.theme-pervomay .hero .kicker,.theme-pervomay .hero .tags span{color:#ffe08a;border-color:#ffe08a}
+.theme-pervomay .hero .sub{color:#ffd6dc}
+.theme-pervomay .photo{border:6px solid #fff;box-shadow:0 20px 40px rgba(0,0,0,.3)}
+.theme-pervomay .keyfacts li{border-top:6px solid var(--accent);box-shadow:0 10px 24px rgba(120,10,30,.08)}
+.theme-pervomay .keyfacts li:nth-child(2){border-color:#0081c8}.theme-pervomay .keyfacts li:nth-child(3){border-color:#fcb131}.theme-pervomay .keyfacts li:nth-child(4){border-color:#00a651}
+.theme-pervomay .keyfacts .v{font-family:"Golos Text",sans-serif;font-weight:700}
+.theme-pervomay .passport{border:2px solid var(--accent)}
+
+/* 3. Tarnowiec — Краковский карнавал ------------------------- */
+.theme-tarnowiec{--bg:#fffdf7;--ink:#1b1d33;--muted:#5d607c;--accent:#1f4fb5;--accent2:#e0262b;--panel:#fff;--line:rgba(31,79,181,.18);--font-head:"Comfortaa",sans-serif;--font-body:"Nunito",sans-serif;--head-weight:700;--radius:26px;--stroke:#1b1d33;--mark-bg:#ffe36b;--yr-ink:#e0262b;--bar-bg:#1f4fb5;--photo-bg:repeating-linear-gradient(115deg,rgba(224,38,43,.85) 0 12px,transparent 12px 52px),repeating-linear-gradient(62deg,rgba(31,79,181,.8) 0 9px,transparent 9px 61px),repeating-linear-gradient(165deg,rgba(245,196,0,.9) 0 7px,transparent 7px 43px),#fff;--photo-bg2:1}
+.theme-tarnowiec .photo::before{content:"";position:absolute;inset:18% 16%;border-radius:50%;background:#fffdf7;box-shadow:0 0 0 6px #fffdf7,0 0 0 9px #1b1d33;z-index:-1}
+.theme-tarnowiec::before{content:"";position:fixed;inset:0 0 auto 0;height:10px;z-index:40;background:linear-gradient(90deg,#e0262b 0 33%,#1f4fb5 33% 66%,#f5c400 66%)}
+.theme-tarnowiec h1{font-size:clamp(2.2rem,5vw,4rem)}
+.theme-tarnowiec h1 .t2{color:var(--accent2)}
+.theme-tarnowiec .photo{border:8px solid #fff;box-shadow:0 0 0 2px #1b1d33,0 24px 40px rgba(27,29,51,.18)}
+.theme-tarnowiec .photo svg.mug{filter:drop-shadow(0 0 0 #fff) drop-shadow(0 10px 18px rgba(0,0,0,.25))}
+.theme-tarnowiec .keyfacts li{color:#fff;rotate:-1.2deg;--k-ink:rgba(255,255,255,.85)}
+.theme-tarnowiec .keyfacts li:nth-child(1){background:#e0262b}
+.theme-tarnowiec .keyfacts li:nth-child(2){background:#1f4fb5;rotate:1deg}
+.theme-tarnowiec .keyfacts li:nth-child(3){background:#f5c400;color:#1b1d33;--k-ink:#1b1d33}
+.theme-tarnowiec .keyfacts li:nth-child(4){background:#1b1d33;rotate:.8deg}
+.theme-tarnowiec .passport{border:2px dashed var(--accent)}
+
+/* 4. «Красный Май» — Огненный гурт --------------------------- */
+.theme-krasmay{--bg:#160705;--ink:#fbe9df;--muted:#c49a88;--accent:#ff6a2b;--accent2:#ffc04d;--panel:rgba(255,106,43,.07);--line:rgba(255,140,80,.22);--font-head:"Unbounded",sans-serif;--font-body:"Manrope",sans-serif;--head-weight:800;--head-ls:-.02em;--radius:20px;--stroke:#ffcf8a;--mark-bg:linear-gradient(90deg,rgba(255,59,31,.45),rgba(255,176,46,.45));--mark-ink:#fff;--yr-ink:#ffc04d;--bar-bg:rgba(22,7,5,.8);--photo-bg:radial-gradient(circle at 50% 60%,#ff5a1f 0,#a3200d 38%,#2a0b06 75%)}
+.theme-krasmay{background-image:radial-gradient(900px 500px at 10% 0,rgba(255,80,30,.22),transparent 70%),radial-gradient(700px 500px at 100% 30%,rgba(215,232,90,.08),transparent 70%)}
+.theme-krasmay h1{background:linear-gradient(180deg,#ff3b1f 0%,#ffb02e 55%,#d7e85a 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.theme-krasmay .hero{padding-bottom:3.5rem}
+.theme-krasmay .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:28px;background:radial-gradient(circle at 18px -4px,transparent 17px,rgba(255,106,43,.55) 18px,transparent 20px) 0 0/36px 28px repeat-x}
+.theme-krasmay .photo{border-radius:46% 46% 22px 22px/30% 30% 22px 22px}
+.theme-krasmay .keyfacts li{border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,59,31,.18),rgba(255,176,46,.05))}
+.theme-krasmay .keyfacts .v{font-family:"Manrope",sans-serif;font-weight:800}
+.theme-krasmay .passport{border:1px solid var(--line)}
+.theme-krasmay .story h2{font-size:1.3rem;text-transform:uppercase}
+
+/* 5. WW-Team — Банкнотный зал -------------------------------- */
+.theme-wwteam{--bg:#f1eee2;--ink:#1c2a25;--muted:#5d6b63;--accent:#2e5e4e;--accent2:#8a5a2b;--panel:#f8f6ec;--line:rgba(46,94,78,.25);--font-head:"Cormorant SC",serif;--font-body:"Cormorant Garamond",serif;--font-ui:"IBM Plex Mono",monospace;--fs:20px;--head-weight:700;--radius:0;--stroke:#2e5e4e;--mark-bg:rgba(138,90,43,.16);--mark-ink:#5a3410;--yr-ink:#8a5a2b;--bar-bg:#1f3f35;--photo-bg:repeating-radial-gradient(circle at 50% 50%,rgba(46,94,78,.09) 0 1px,transparent 1px 7px),#efe9d6}
+.theme-wwteam{background-image:repeating-radial-gradient(circle at 0 0,rgba(46,94,78,.05) 0 1px,transparent 1px 9px),repeating-radial-gradient(circle at 100% 100%,rgba(138,90,43,.05) 0 1px,transparent 1px 11px)}
+.theme-wwteam .hero{border:1px solid var(--accent);outline:6px double rgba(46,94,78,.35);outline-offset:6px;padding:clamp(1.6rem,4vw,3rem);background:linear-gradient(rgba(248,246,236,.92),rgba(248,246,236,.92)),repeating-linear-gradient(45deg,rgba(46,94,78,.12) 0 1px,transparent 1px 8px);overflow:hidden}
+.theme-wwteam .hero::before{content:"DM";position:absolute;right:-1rem;top:-2.5rem;font-family:"Cormorant SC",serif;font-size:16rem;font-weight:700;line-height:1;color:rgba(46,94,78,.06);pointer-events:none}
+.theme-wwteam .kicker{color:#b0302a;font-family:"IBM Plex Mono",monospace;letter-spacing:.3em}
+.theme-wwteam h1{font-size:clamp(2.2rem,5vw,4rem);letter-spacing:.01em}
+.theme-wwteam .photo{border:1px solid var(--accent);outline:1px solid var(--accent);outline-offset:-10px}
+.theme-wwteam .keyfacts li{border:1px solid var(--accent);box-shadow:inset 0 0 0 4px var(--panel),inset 0 0 0 5px rgba(46,94,78,.4);text-align:center}
+.theme-wwteam .keyfacts .v{font-family:"Cormorant Garamond",serif;font-size:1.35rem;font-weight:700}
+.theme-wwteam .passport{border:1px solid var(--accent)}
+.theme-wwteam .passport dd{font-family:"IBM Plex Mono",monospace;font-size:.85rem}
+
+/* 6. Антикварная (без клейма) — Архив мер и весов ------------- */
+.theme-antique{--bg:#ede1c6;--ink:#3a2915;--muted:#79634a;--accent:#7a4b1e;--accent2:#9b2c1f;--panel:#f5ecd6;--line:rgba(122,75,30,.3);--font-head:"Old Standard TT",serif;--font-body:"Old Standard TT",serif;--fs:18.5px;--head-weight:700;--radius:0;--stroke:#6b4a2a;--mark-bg:rgba(155,44,31,.12);--mark-ink:#7a1f15;--yr-ink:#9b2c1f;--bar-bg:#3a2915;--photo-bg:radial-gradient(circle at 50% 40%,#f6eedb,#d9c7a0 85%)}
+.theme-antique{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .22 0 0 0 0 .08 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(circle at 50% 30%,transparent 40%,rgba(90,55,20,.18))}
+.theme-antique .hero-text{border-top:3px double var(--accent);border-bottom:3px double var(--accent);padding:1.8rem 0}
+.theme-antique .kicker{font-style:italic;letter-spacing:.14em;text-transform:none;font-size:1rem}
+.theme-antique h1{font-style:italic}
+.theme-antique .photo{border:1px solid var(--accent);box-shadow:0 0 0 8px var(--panel),0 0 0 9px var(--accent),0 20px 40px rgba(60,35,10,.25)}
+.theme-antique .photo::after{content:"1/4 L";position:absolute;left:12%;right:12%;top:30%;border-top:1.5px solid rgba(58,41,21,.55);font-size:.9rem;font-style:italic;color:rgba(58,41,21,.7);padding-left:.4rem;z-index:1}
+.theme-antique .keyfacts li{border:1px dashed var(--accent);background:#f7efda}
+.theme-antique .keyfacts .k{font-style:italic;text-transform:none;letter-spacing:.04em;font-size:.85rem;color:var(--accent2)}
+.theme-antique .story .text p:first-child::first-letter{float:left;font-size:4.4em;line-height:.8;margin:.06em .1em 0 0;color:var(--accent2);font-weight:700}
+.theme-antique .passport{border:1px solid var(--accent);box-shadow:4px 4px 0 rgba(122,75,30,.25)}
+
+/* 7. RASTAL — Баварский геральдический ---------------------- */
+.theme-rastal{--bg:#fbfcff;--ink:#0f2547;--muted:#4f6283;--accent:#1d6fc4;--accent2:#b8892b;--panel:#fff;--line:rgba(29,111,196,.18);--font-head:"Playfair Display",serif;--font-body:"Lora",serif;--head-weight:800;--radius:4px;--stroke:#0f2547;--mark-bg:rgba(184,137,43,.2);--yr-ink:#b8892b;--bar-bg:#0f2547;--photo-bg:linear-gradient(rgba(255,255,255,.86),rgba(255,255,255,.86)),linear-gradient(60deg,#1d6fc4 25%,transparent 25.5% 74.5%,#1d6fc4 75%),linear-gradient(120deg,#1d6fc4 25%,transparent 25.5% 74.5%,#1d6fc4 75%)}
+.theme-rastal .photo{background-size:auto,34px 59px,34px 59px;border:2px solid var(--accent2);box-shadow:0 0 0 6px #fff,0 0 0 7px var(--accent2),0 24px 50px rgba(15,37,71,.15)}
+.theme-rastal::before{content:"";display:block;height:16px;background:linear-gradient(60deg,#1d6fc4 25%,#fff 25.5% 74.5%,#1d6fc4 75%),linear-gradient(120deg,#1d6fc4 25%,#fff 25.5% 74.5%,#1d6fc4 75%);background-size:18px 31px}
+.theme-rastal h1 em{font-style:italic;font-weight:600;color:var(--accent)}
+.theme-rastal .kicker{color:var(--accent2)}
+.theme-rastal .keyfacts li{border:1px solid rgba(184,137,43,.55);box-shadow:inset 0 0 0 5px #fff,inset 0 0 0 6px rgba(184,137,43,.35);padding:1.5rem 1.5rem 1.6rem}
+.theme-rastal .keyfacts .k{color:var(--accent2)}
+.theme-rastal .keyfacts .v{font-weight:700}
+.theme-rastal .passport{border-top:6px solid var(--accent);box-shadow:0 18px 40px rgba(15,37,71,.08)}
+
+/* 8. Вестервальд — соляная глазурь и кобальт ----------------- */
+.theme-westerwald{--bg:#cfcfc8;--ink:#17202e;--muted:#4e5869;--accent:#1f3f9b;--accent2:#2f5fd0;--panel:#e9e8e1;--line:rgba(31,63,155,.22);--font-head:"Yeseva One",serif;--font-body:"PT Serif",serif;--head-weight:400;--radius:10px;--stroke:#1f3f9b;--mark-bg:rgba(47,95,208,.16);--mark-ink:#0e2a78;--bar-bg:#1a2f72;--photo-bg:radial-gradient(circle at 50% 40%,#ecebe4,#b8b8b0 85%)}
+.theme-westerwald{background-image:radial-gradient(rgba(40,40,40,.13) 1px,transparent 1.5px),radial-gradient(rgba(255,255,255,.35) 1px,transparent 1.5px);background-size:7px 7px,11px 11px;background-position:0 0,3px 5px}
+.theme-westerwald .hero{background:var(--panel);border-radius:22px;padding:clamp(1.6rem,4vw,3rem);box-shadow:inset 0 0 60px rgba(0,0,0,.08)}
+.theme-westerwald .hero::before{content:"";position:absolute;left:0;right:0;top:0;height:22px;border-radius:22px 22px 0 0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='22'%3E%3Cpath d='M0 11 Q15 0 30 11 T60 11' fill='none' stroke='%231f3f9b' stroke-width='5'/%3E%3C/svg%3E") repeat-x}
+.theme-westerwald h1{color:var(--accent)}
+.theme-westerwald .photo{border-radius:14px;box-shadow:0 0 0 3px var(--accent)}
+.theme-westerwald .keyfacts li{background:var(--accent);color:#fff;--k-ink:#b9c9ff}
+.theme-westerwald .keyfacts .v{font-family:"PT Serif",serif;font-weight:700}
+.theme-westerwald .passport{border:2px solid var(--accent)}
+
+/* 9. Фарфоровая зажигалка — Рококо -------------------------- */
+.theme-rococo{--bg:#fcf4f2;--ink:#4a3240;--muted:#8a6c7a;--accent:#b46a80;--accent2:#b08d3c;--panel:#fff;--line:rgba(176,141,60,.3);--font-head:"Marck Script",cursive;--font-body:"Bona Nova",serif;--head-weight:400;--radius:30px;--stroke:#8aa9cf;--mark-bg:rgba(143,179,217,.28);--yr-ink:#b08d3c;--bar-bg:#7d5266;--photo-bg:radial-gradient(circle at 50% 45%,#fff,#e9f0f8 60%,#f6e3e8)}
+.theme-rococo h1{font-size:clamp(2.8rem,7vw,5.2rem);color:var(--accent);line-height:1.05}
+.theme-rococo .kicker{color:var(--accent2);font-family:"Bona Nova",serif;letter-spacing:.3em}
+.theme-rococo .photo{border-radius:50%/44%;border:3px solid var(--accent2);box-shadow:0 0 0 8px #fff,0 0 0 10px rgba(176,141,60,.5),0 26px 50px rgba(120,70,90,.18)}
+.theme-rococo .keyfacts li{text-align:center;border:1px solid var(--line)}
+.theme-rococo .keyfacts li:nth-child(odd){background:#eef4fb}
+.theme-rococo .keyfacts li:nth-child(even){background:#fbecef}
+.theme-rococo .keyfacts .v{font-family:"Bona Nova",serif;font-weight:700}
+.theme-rococo .story h2,.theme-rococo .passport h2{font-size:2.2rem;color:var(--accent)}
+.theme-rococo .passport{border:1px solid var(--line)}
+
+/* 10. Восточная Европа (без клейма) — Замок ----------------- */
+.theme-castle{--bg:#262422;--ink:#efe6d8;--muted:#b3a693;--accent:#e0a046;--accent2:#f0cd8a;--panel:#34312d;--line:rgba(224,160,70,.22);--font-head:"Ruslan Display",serif;--font-body:"Literata",serif;--head-weight:400;--radius:0;--stroke:#e6d9c3;--mark-bg:rgba(224,160,70,.22);--mark-ink:#fff;--bar-bg:rgba(20,19,18,.85);--photo-bg:radial-gradient(circle at 50% 70%,rgba(255,170,60,.28),transparent 55%),#1b1a18}
+.theme-castle{background-image:linear-gradient(rgba(0,0,0,.25) 2px,transparent 2px),linear-gradient(90deg,rgba(0,0,0,.25) 2px,transparent 2px),linear-gradient(90deg,rgba(0,0,0,.25) 2px,transparent 2px);background-size:100% 34px,68px 68px,68px 68px;background-position:0 0,0 0,34px 34px}
+.theme-castle .hero-text{padding-top:2.6rem;position:relative}
+.theme-castle .hero-text::before{content:"";position:absolute;top:0;left:0;width:220px;height:22px;background:linear-gradient(90deg,var(--accent) 50%,transparent 50%) 0 0/44px 22px}
+.theme-castle h1{font-size:clamp(2.3rem,5.4vw,4.4rem);color:#f5ead6;text-shadow:0 3px 0 rgba(0,0,0,.4)}
+.theme-castle .photo{border-radius:50% 50% 0 0/28% 28% 0 0;border:3px solid #3f3a34}
+.theme-castle .keyfacts li{background:linear-gradient(#34312d,#2c2a26);box-shadow:inset 0 3px 0 var(--accent),0 10px 0 -4px #1b1a18}
+.theme-castle .passport{box-shadow:inset 0 3px 0 var(--accent)}
+
+/* 11. BMF — Нюрнбергское олово ----------------------------- */
+.theme-bmf{--bg:#e8eaeb;--ink:#21292e;--muted:#5b666d;--accent:#3d5a3a;--accent2:#6f7c84;--panel:linear-gradient(135deg,#fafbfb,#d5d9dc 45%,#f3f4f5 60%,#bfc5c9);--line:rgba(33,41,46,.15);--font-head:"Alegreya SC",serif;--font-body:"Alegreya",serif;--fs:19px;--head-weight:700;--radius:8px;--stroke:#3d4a52;--mark-bg:rgba(61,90,58,.15);--mark-ink:#25401f;--yr-ink:#3d5a3a;--bar-bg:#2c3439;--photo-bg:linear-gradient(135deg,#fdfdfd,#cfd4d8 40%,#f5f6f7 55%,#aeb6bb)}
+.theme-bmf{background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.35) 0 1px,transparent 1px 3px)}
+.theme-bmf .photo{border:10px solid transparent;background-clip:padding-box;box-shadow:0 0 0 10px #9aa3a9,0 0 0 11px #6b757b,0 26px 50px rgba(0,0,0,.2);margin:11px}
+.theme-bmf .hero-text::after{content:"";display:block;margin-top:1.6rem;width:180px;height:26px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='45' height='26' viewBox='0 0 45 26'%3E%3Cpath d='M4 13c6-9 14-9 18 0-4 9-12 9-18 0zm19 0c6-9 14-9 18 0-4 9-12 9-18 0z' fill='%233d5a3a'/%3E%3C/svg%3E") repeat-x}
+.theme-bmf h1{color:#1c2428}
+.theme-bmf .keyfacts li{border:1px solid #a7afb4;box-shadow:inset 0 1px 0 #fff,0 6px 16px rgba(0,0,0,.08)}
+.theme-bmf .passport{border:1px solid #a7afb4}
+
+/* 12. Майолика УССР — Пивной бар ---------------------------- */
+.theme-majolica{--bg:#43230d;--ink:#fbead1;--muted:#d8b48a;--accent:#f4b23c;--accent2:#fff1d2;--panel:#5a3214;--line:rgba(244,178,60,.25);--font-head:"Russo One",sans-serif;--font-body:"PT Sans",sans-serif;--fs:18.5px;--head-weight:400;--radius:16px;--stroke:#ffe2a8;--mark-bg:rgba(244,178,60,.3);--mark-ink:#fff;--yr-ink:#f4b23c;--bar-bg:#2c1607;--photo-bg:radial-gradient(circle at 50% 40%,#9a5a22,#4a260d 75%)}
+.theme-majolica{background-image:radial-gradient(circle at 20% 15%,rgba(255,255,255,.07) 0 3px,transparent 4px),radial-gradient(circle at 70% 60%,rgba(255,255,255,.05) 0 5px,transparent 6px),radial-gradient(circle at 40% 80%,rgba(255,255,255,.06) 0 2px,transparent 3px);background-size:180px 180px,240px 240px,130px 130px}
+.theme-majolica .topbar{background:#f6efe0;color:#43230d}
+.theme-majolica .topbar::after{content:"";position:absolute;left:0;right:0;top:100%;height:46px;pointer-events:none;background:radial-gradient(ellipse 11px 20px at 50% 0,#f6efe0 98%,transparent) 0 0/58px 34px repeat-x,radial-gradient(ellipse 7px 34px at 50% 0,#f6efe0 98%,transparent) 21px 0/97px 46px repeat-x,radial-gradient(ellipse 16px 12px at 50% 0,#f6efe0 98%,transparent) 40px 0/41px 20px repeat-x}
+.theme-majolica .exhibit{padding-top:clamp(3rem,6vw,5rem)}
+.theme-majolica h1{color:var(--accent);text-shadow:0 4px 0 rgba(0,0,0,.35)}
+.theme-majolica .photo{border-radius:28px;border:4px solid #f6efe0}
+.theme-majolica .keyfacts li{border:2px dashed var(--line);text-align:center}
+.theme-majolica .keyfacts .v{font-family:"PT Sans",sans-serif;font-weight:700}
+.theme-majolica .passport{border:2px solid var(--accent)}
+
+/* 13. Радошковичи — Мемориальный ---------------------------- */
+.theme-radosh{--bg:#1a1411;--ink:#ebe0d3;--muted:#ad9d8c;--accent:#c24f2f;--accent2:#d9b26a;--panel:#241c18;--line:rgba(217,178,106,.22);--font-head:"Oswald",sans-serif;--font-body:"Arsenal",sans-serif;--fs:19px;--head-weight:600;--head-ls:.04em;--radius:0;--stroke:#d9b26a;--mark-bg:rgba(194,79,47,.28);--mark-ink:#fff;--yr-ink:#d9b26a;--bar-bg:#100c0a;--photo-bg:linear-gradient(rgba(26,20,17,.75),rgba(26,20,17,.75)),repeating-linear-gradient(0deg,#5b2a1c 0 20px,#3a1a11 20px 22px)}
+.theme-radosh h1{text-transform:uppercase;font-size:clamp(2.4rem,6vw,4.8rem)}
+.theme-radosh .kicker{color:var(--accent2)}
+.theme-radosh .kicker::before{content:"★";width:auto;height:auto;background:none;color:var(--accent);font-size:1.2rem}
+.theme-radosh .kicker::after{content:"★";width:auto;height:auto;background:none;color:var(--accent);font-size:1.2rem}
+.theme-radosh .photo{border-top:4px solid var(--accent);border-bottom:4px solid var(--accent)}
+.theme-radosh .keyfacts li{border-left:3px solid var(--accent2)}
+.theme-radosh .keyfacts .v{font-family:"Arsenal",sans-serif;font-weight:700}
+.theme-radosh .story h2,.theme-radosh .passport h2{text-transform:uppercase;letter-spacing:.08em}
+
+/* 14. Борисов — Белорусский орнамент ------------------------ */
+.theme-borisov{--bg:#f6eee0;--ink:#2d1a10;--muted:#7a5c48;--accent:#b2331c;--accent2:#c7792b;--panel:#fffaf1;--line:rgba(178,51,28,.2);--font-head:"Philosopher",sans-serif;--font-body:"Ledger",serif;--head-weight:700;--radius:6px;--stroke:#8a3a17;--mark-bg:rgba(199,121,43,.22);--yr-ink:#b2331c;--bar-bg:#7d2413;--photo-bg:radial-gradient(circle at 50% 40%,#f3d9b0,#c7792b 120%)}
+.theme-borisov .hero{padding:2.6rem 0}
+.theme-borisov .hero::before,.theme-borisov .hero::after{content:"";position:absolute;left:0;right:0;height:16px;background:linear-gradient(45deg,transparent 33%,#b2331c 33% 66%,transparent 66%),linear-gradient(-45deg,transparent 33%,#b2331c 33% 66%,transparent 66%);background-size:16px 16px}
+.theme-borisov .hero::before{top:0}.theme-borisov .hero::after{bottom:0}
+.theme-borisov h1{color:var(--accent)}
+.theme-borisov .photo{border-radius:50% 50% 12px 12px}
+.theme-borisov .keyfacts li{border:1px solid var(--line);padding-top:2.1rem}
+.theme-borisov .keyfacts li::before{content:"";position:absolute;top:.8rem;left:1.35rem;width:18px;height:18px;border-radius:50%;background:radial-gradient(circle,#fffaf1 22%,#c7792b 24% 46%,#fffaf1 48% 58%,#b2331c 60%)}
+.theme-borisov .passport{border:1px solid var(--line);background-image:linear-gradient(45deg,transparent 33%,rgba(178,51,28,.85) 33% 66%,transparent 66%),linear-gradient(-45deg,transparent 33%,rgba(178,51,28,.85) 33% 66%,transparent 66%);background-size:12px 12px;background-repeat:repeat-x;background-position:0 0;padding-top:2.4rem}
+
+/* 15. «Пролетарий» — Белый фарфор и золото ------------------ */
+.theme-proletariy{--bg:#fdfdfd;--ink:#1d2742;--muted:#5d6782;--accent:#2b58a6;--accent2:#b89443;--panel:#fff;--line:rgba(184,148,67,.4);--font-head:"Tenor Sans",sans-serif;--font-body:"Merriweather",serif;--fs:17.5px;--head-weight:400;--radius:999px;--stroke:#2b58a6;--mark-bg:rgba(43,88,166,.1);--mark-ink:#1b3c78;--yr-ink:#b89443;--bar-bg:#1d2742;--photo-bg:radial-gradient(circle,#fff 52%,#f2f5fb 53% 60%,#fff 61%)}
+.theme-proletariy{background-image:radial-gradient(1000px 500px at 50% -20%,#eef3fb,transparent 70%)}
+.theme-proletariy .hero-text{border-left:1px solid var(--accent2);padding-left:2rem}
+.theme-proletariy h1{letter-spacing:.02em}
+.theme-proletariy .photo{aspect-ratio:1;border-radius:50%;box-shadow:0 0 0 2px var(--accent2),0 0 0 9px #fff,0 0 0 10px var(--accent2),0 30px 60px rgba(29,39,66,.12)}
+.theme-proletariy .keyfacts li{border-radius:0;border-top:3px double var(--accent2);border-bottom:3px double var(--accent2);text-align:center}
+.theme-proletariy .keyfacts .k{color:var(--accent2)}
+.theme-proletariy .passport{border-radius:18px;border:1px solid var(--line);box-shadow:0 20px 50px rgba(29,39,66,.06)}
+
+/* 16. Вербилки — Императорский флот ------------------------- */
+.theme-verbilki{--bg:#0b1a31;--ink:#eef2f8;--muted:#a6b5cd;--accent:#d6b046;--accent2:#8fb8e8;--panel:#11264a;--line:rgba(214,176,70,.3);--font-head:"Prata",serif;--font-body:"EB Garamond",serif;--fs:20px;--head-weight:400;--radius:4px;--stroke:#e9d08a;--mark-bg:rgba(214,176,70,.22);--mark-ink:#fff;--yr-ink:#d6b046;--bar-bg:rgba(7,16,31,.85);--photo-bg:radial-gradient(circle at 50% 35%,#1f4a86,#0b1a31 75%)}
+.theme-verbilki{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='24'%3E%3Cpath d='M0 12 Q20 0 40 12 T80 12' fill='none' stroke='%23d6b046' stroke-opacity='.07' stroke-width='2'/%3E%3C/svg%3E")}
+.theme-verbilki .kicker::before{content:"⚓";width:auto;height:auto;background:none;font-size:1.2rem;letter-spacing:0}
+.theme-verbilki h1{color:#f6e7b8}
+.theme-verbilki .photo{border:1px solid var(--accent);box-shadow:0 0 0 6px var(--bg),0 0 0 7px var(--accent)}
+.theme-verbilki .keyfacts li{border:1px solid var(--line);text-align:center}
+.theme-verbilki .keyfacts li::after{content:"";position:absolute;left:50%;bottom:-6px;width:12px;height:12px;background:var(--accent);transform:translateX(-50%) rotate(45deg)}
+.theme-verbilki .keyfacts .v{font-family:"EB Garamond",serif;font-weight:700;font-size:1.3rem}
+.theme-verbilki .passport{border:1px solid var(--line)}
+
+/* 17. Bayerische Porzellanmanufaktur — Стадион -------------- */
+.theme-bayporz{--bg:#f5f6f8;--ink:#10141c;--muted:#5a6272;--accent:#dc052d;--accent2:#0066b2;--panel:#fff;--line:rgba(16,20,28,.12);--font-head:"Exo 2",sans-serif;--font-body:"Inter",sans-serif;--fs:17.5px;--head-weight:900;--head-ls:-.02em;--radius:12px;--stroke:#fff;--mark-bg:rgba(220,5,45,.12);--mark-ink:#a00321;--yr-ink:#0066b2;--bar-bg:#10141c;--photo-bg:radial-gradient(circle at 50% 50%,transparent 26%,rgba(255,255,255,.55) 26.4% 27%,transparent 27.4%),linear-gradient(90deg,transparent 49.7%,rgba(255,255,255,.55) 49.7% 50.3%,transparent 50.3%),repeating-linear-gradient(90deg,#1f8f3a 0 40px,#1a7f33 40px 80px)}
+.theme-bayporz .hero{background:linear-gradient(115deg,#dc052d 0 60%,#b8031f 60%);color:#fff;padding:clamp(1.6rem,4vw,3rem);border-radius:18px;overflow:hidden}
+.theme-bayporz .hero .kicker,.theme-bayporz .hero .tags span{color:#fff;border-color:#fff}
+.theme-bayporz .hero .sub{color:rgba(255,255,255,.85)}
+.theme-bayporz h1{font-style:italic;text-transform:uppercase}
+.theme-bayporz .photo{border:4px solid #fff}
+.theme-bayporz .keyfacts li{background:#10141c;color:#fff;--k-ink:#ff5470}
+.theme-bayporz .keyfacts .v{font-family:"Exo 2",sans-serif;font-weight:800}
+.theme-bayporz .passport{border-top:6px solid var(--accent2);box-shadow:0 14px 40px rgba(16,20,28,.08)}
+
+/* 18. Polystar — Пивные карикатуры -------------------------- */
+.theme-polystar{--bg:#fff3c9;--ink:#141414;--muted:#4a4535;--accent:#e2392c;--accent2:#1d63c9;--panel:#fff;--line:#141414;--font-head:"Rubik Mono One",sans-serif;--font-body:"Rubik",sans-serif;--head-weight:400;--head-ls:-.02em;--radius:4px;--stroke:#141414;--mark-bg:#fff;--mark-ink:#141414;--yr-ink:#1d63c9;--q-ink:#e2392c;--bar-bg:#141414;--photo-bg:radial-gradient(rgba(226,57,44,.35) 2px,transparent 2.6px) 0 0/12px 12px,#fff}
+.theme-polystar{background-image:radial-gradient(rgba(20,20,20,.12) 1.4px,transparent 1.8px);background-size:10px 10px}
+.theme-polystar h1{font-size:clamp(1.9rem,4.4vw,3.5rem);line-height:1.15}
+.theme-polystar .kicker{background:#fff;color:#141414;border:3px solid #141414;padding:.4rem 1rem;border-radius:999px;position:relative}
+.theme-polystar .kicker::before{display:none}
+.theme-polystar .kicker::after{content:"";position:absolute;left:24px;bottom:-12px;border:9px solid transparent;border-top-color:#141414}
+.theme-polystar .photo,.theme-polystar .keyfacts li,.theme-polystar .passport{border:3px solid #141414;box-shadow:7px 7px 0 #141414}
+.theme-polystar .keyfacts li:nth-child(1){background:#ffd84d}.theme-polystar .keyfacts li:nth-child(3){background:#9fd3ff}
+.theme-polystar .keyfacts .k{color:#141414}
+.theme-polystar .keyfacts .v{font-family:"Rubik",sans-serif;font-weight:800}
+.theme-polystar mark{border:2px solid #141414;padding:0 .2em}
+.theme-polystar .story h2,.theme-polystar .passport h2{font-size:1.05rem}
+
+/* 19. Fidenza Vetraria — Итальянская графика ---------------- */
+.theme-fidenza{--bg:#f4f3ee;--ink:#121212;--muted:#666;--accent:#1d6b49;--accent2:#121212;--panel:#fff;--line:rgba(18,18,18,.14);--font-head:"Noto Serif Display",serif;--font-body:"Raleway",sans-serif;--fs:17.5px;--head-weight:300;--radius:0;--stroke:#121212;--mark-bg:transparent;--mark-ink:#121212;--yr-ink:#1d6b49;--bar-bg:#121212;--photo-bg:repeating-linear-gradient(-35deg,rgba(18,18,18,.07) 0 1px,transparent 1px 6px),#fff}
+.theme-fidenza::before{content:"";position:fixed;left:0;top:0;bottom:0;width:6px;z-index:40;background:linear-gradient(#1d6b49 0 33.3%,#f4f3ee 33.3% 66.6%,#c8102e 66.6%)}
+.theme-fidenza h1{font-style:italic;font-size:clamp(2.6rem,6.4vw,5.4rem)}
+.theme-fidenza .kicker{color:#121212;font-weight:500;letter-spacing:.4em}
+.theme-fidenza .photo{border:1px solid #121212}
+.theme-fidenza mark{border-bottom:2px solid var(--accent);border-radius:0;padding:0}
+.theme-fidenza .keyfacts{gap:0;border-top:1px solid #121212;border-bottom:1px solid #121212}
+.theme-fidenza .keyfacts li{background:transparent;border-right:1px solid var(--line)}
+.theme-fidenza .keyfacts li:last-child{border-right:0}
+.theme-fidenza .keyfacts .v{font-style:italic;font-weight:400;font-size:1.3rem}
+.theme-fidenza .passport{background:transparent;border:1px solid #121212}
+.theme-fidenza .story h2,.theme-fidenza .passport h2{font-style:italic;font-weight:400}
+
+/* 20. Kössinger — Охотничий домик --------------------------- */
+.theme-kossinger{--bg:#1d271d;--ink:#ece3cf;--muted:#b4ab92;--accent:#cfa54a;--accent2:#a9c48a;--panel:#273327;--line:rgba(207,165,74,.25);--font-head:"Kurale",serif;--font-body:"Vollkorn",serif;--fs:19px;--head-weight:400;--radius:10px;--stroke:#e3c47c;--mark-bg:rgba(207,165,74,.22);--mark-ink:#fff;--yr-ink:#cfa54a;--bar-bg:rgba(16,22,16,.85);--photo-bg:repeating-linear-gradient(88deg,rgba(0,0,0,.18) 0 2px,transparent 2px 9px),radial-gradient(circle at 50% 40%,#5a3d22,#2b1d11 80%)}
+.theme-kossinger{background-image:radial-gradient(circle at 50% -20%,rgba(207,165,74,.12),transparent 60%),repeating-linear-gradient(135deg,rgba(255,255,255,.015) 0 2px,transparent 2px 6px)}
+.theme-kossinger h1{color:#f1e4c2}
+.theme-kossinger .kicker::before{content:"";width:34px;height:18px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 34 18'%3E%3Cpath d='M2 14c8 4 20 4 28-6l2 2-1-6-5 1 2 1c-6 8-16 9-24 6z' fill='%23cfa54a'/%3E%3C/svg%3E") no-repeat center/contain}
+.theme-kossinger .photo{border:3px solid var(--accent);border-radius:16px}
+.theme-kossinger .keyfacts li{border:1px solid var(--line);background:linear-gradient(180deg,#2c3a2c,#232e23)}
+.theme-kossinger .keyfacts .v{font-family:"Vollkorn",serif;font-weight:700}
+.theme-kossinger .passport{border:1px solid var(--line)}
+
+/* ---------- фирменные анимации заводов ---------- */
+@keyframes shimmerTxt{to{background-position:200% 0}}
+.theme-neman h1{background-size:200% 100%;animation:fadeUp .9s .1s both,shimmerTxt 7s linear infinite}
+@keyframes flicker{0%,100%{box-shadow:0 0 40px rgba(255,90,31,.35)}35%{box-shadow:0 0 70px rgba(255,140,40,.55)}60%{box-shadow:0 0 30px rgba(255,60,20,.3)}80%{box-shadow:0 0 60px rgba(255,180,60,.5)}}
+.theme-krasmay .photo{animation:popIn 1.1s .15s both,flicker 3.2s 1.3s ease-in-out infinite}
+.theme-krasmay h1{background-size:100% 220%;animation:fadeUp .9s .1s both,flame 5s ease-in-out infinite alternate}
+@keyframes flame{to{background-position:0 100%}}
+@keyframes slide{to{background-position:240px 0}}
+.theme-pervomay .hero::after{background-size:240px 100%;background-image:linear-gradient(90deg,#0081c8 0 20%,#fcb131 20% 40%,#1b1b1b 40% 60%,#00a651 60% 80%,#ee334e 80%);animation:slide 6s linear infinite}
+.theme-tarnowiec::before{background:linear-gradient(90deg,#e0262b 0 33%,#1f4fb5 33% 66%,#f5c400 66%) 0 0/300px 100%;animation:slide 5s linear infinite}
+@keyframes wobble{0%,100%{rotate:0deg}25%{rotate:-3deg}75%{rotate:3deg}}
+.theme-tarnowiec .keyfacts li:hover,.theme-polystar .keyfacts li:hover{animation:wobble .5s ease}
+@keyframes drip{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.25)}}
+.theme-majolica .topbar::after{transform-origin:top;animation:drip 4s ease-in-out infinite}
+@keyframes waves{to{background-position:160px 0}}
+.theme-verbilki{animation:waves 14s linear infinite}
+@keyframes sheen{0%{background-position:-200% 0}60%,100%{background-position:200% 0}}
+.theme-bayporz .hero{background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.18) 50%,transparent 60%) 0 0/200% 100%,linear-gradient(115deg,#dc052d 0 60%,#b8031f 60%);animation:sheen 6s 1s ease-in-out infinite}
+@keyframes bounceIn{0%{transform:scale(.4);opacity:0}60%{transform:scale(1.12)}100%{transform:scale(1);opacity:1}}
+.theme-polystar .kicker{animation:bounceIn .7s cubic-bezier(.3,1.6,.5,1) both}
+.theme-polystar .photo,.theme-polystar .keyfacts li{transition:transform .2s,box-shadow .2s}
+.theme-polystar .keyfacts li:hover{box-shadow:10px 10px 0 #141414}
+@keyframes torch{0%,100%{filter:brightness(1)}40%{filter:brightness(1.15)}70%{filter:brightness(.92)}}
+.theme-castle .photo{animation:popIn 1.1s .15s both,torch 2.6s 1.3s ease-in-out infinite}
+@keyframes sway{0%,100%{rotate:-2deg}50%{rotate:2deg}}
+.theme-rococo .photo svg.mugart{animation:sway 6s ease-in-out infinite}
+.theme-rastal .photo{background-position:0 0,0 0,0 0;animation:popIn 1.1s .15s both,rautenMove 30s linear infinite}
+@keyframes rautenMove{to{background-position:0 0,340px 590px,340px 590px}}
+.theme-fidenza .keyfacts li{background:linear-gradient(var(--accent),var(--accent)) 0 100%/0 2px no-repeat;transition:background-size .5s}
+.theme-fidenza .keyfacts li:hover{background-size:100% 2px}
+@keyframes hornGlow{0%,100%{filter:drop-shadow(0 0 0 rgba(207,165,74,0))}50%{filter:drop-shadow(0 0 12px rgba(207,165,74,.45))}}
+.theme-kossinger .photo{animation:popIn 1.1s .15s both,hornGlow 4s 1.3s ease-in-out infinite}
+@media (max-width:560px){
+  .theme-pervomay .hero,.theme-bayporz .hero,.theme-westerwald .hero{padding:1.3rem 1.1rem 1.6rem;border-radius:12px}
+  .theme-wwteam .hero{padding:1.4rem 1rem;outline-offset:3px;outline-width:4px}
+  .theme-wwteam .hero::before{font-size:9rem}
+  .theme-proletariy .hero-text{padding-left:1rem}
+  .theme-borisov .hero{padding:2rem 0}
+  .theme-rococo h1{font-size:2.6rem!important}
+  .theme-polystar h1{font-size:1.5rem!important}
+  .theme-tarnowiec .photo{border-width:5px}
+  .theme-bmf .photo{margin:6px;box-shadow:0 0 0 6px #9aa3a9,0 0 0 7px #6b757b}
+}
