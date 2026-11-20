@@ -277,3 +277,171 @@
   .theme-tarnowiec .photo{border-width:5px}
   .theme-bmf .photo{margin:6px;box-shadow:0 0 0 6px #9aa3a9,0 0 0 7px #6b757b}
 }
+
+/* ==========================================================
+   Вторая очередь — новые заводы
+   ========================================================== */
+
+/* Pasabahce · LIDBEER — фестивальная афиша */
+.theme-festival{--bg:#fff8ee;--ink:#1a1230;--muted:#5c5470;--accent:#ff5a36;--accent2:#1d63c9;--panel:#fff;--line:rgba(26,18,48,.14);--font-head:"Montserrat Alternates",sans-serif;--font-body:"Montserrat",sans-serif;--fs:17.5px;--head-weight:800;--radius:22px;--stroke:#1a1230;--mark-bg:#ffe14d;--yr-ink:#1d63c9;--bar-bg:#1a1230;--photo-bg:radial-gradient(circle at 30% 20%,#ffe14d 0 12%,transparent 13%),radial-gradient(circle at 80% 70%,#5ad1ff 0 10%,transparent 11%),radial-gradient(circle at 70% 15%,#ff8ad8 0 7%,transparent 8%),#ffefe0}
+.theme-festival .hero{background:linear-gradient(135deg,#ff5a36,#ff2e7e 60%,#7a3cff);color:#fff;padding:clamp(1.6rem,4vw,3rem);border-radius:28px}
+.theme-festival .hero .kicker,.theme-festival .hero .tags span{color:#ffe14d;border-color:#ffe14d}
+.theme-festival .hero .sub{color:rgba(255,255,255,.85)}
+.theme-festival .keyfacts li{border:3px solid #1a1230;box-shadow:6px 6px 0 #ff5a36}
+.theme-festival .keyfacts li:nth-child(even){box-shadow:6px 6px 0 #1d63c9}
+
+/* Ашинский завод — советский общепит */
+.theme-asz{--bg:#e3e8e4;--ink:#1f2a26;--muted:#56645e;--accent:#2f6b52;--accent2:#b5122f;--panel:#f3f5f2;--line:rgba(31,42,38,.18);--font-head:"Podkova",serif;--font-body:"Fira Sans Condensed",sans-serif;--fs:18px;--head-weight:800;--radius:4px;--stroke:#1f2a26;--mark-bg:rgba(47,107,82,.18);--yr-ink:#b5122f;--bar-bg:#2f6b52;--photo-bg:repeating-linear-gradient(0deg,#dfe5e1 0 39px,#cfd7d2 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,#cfd7d2 39px 40px)}
+.theme-asz .hero-text{border-left:10px solid var(--accent);padding-left:1.4rem}
+.theme-asz .kicker{font-family:"Fira Sans Condensed",sans-serif;letter-spacing:.3em}
+.theme-asz .keyfacts li{border-top:4px solid var(--accent);background:repeating-linear-gradient(0deg,transparent 0 23px,rgba(47,107,82,.08) 23px 24px),#f3f5f2}
+.theme-asz .passport{border:2px solid var(--ink);box-shadow:5px 5px 0 rgba(31,42,38,.18)}
+
+/* «Лысая гора» — огненный меланж */
+.theme-lysaya{--bg:#140a1d;--ink:#fde9d6;--muted:#c2a6b0;--accent:#ff8a1c;--accent2:#5a7dff;--panel:rgba(255,138,28,.07);--line:rgba(255,138,28,.22);--font-head:"Days One",sans-serif;--font-body:"Ubuntu",sans-serif;--fs:17.5px;--head-weight:400;--radius:20px;--stroke:#ffd9a8;--mark-bg:linear-gradient(90deg,rgba(255,138,28,.4),rgba(90,125,255,.4));--mark-ink:#fff;--yr-ink:#ffb04a;--bar-bg:rgba(20,10,29,.85);--photo-bg:radial-gradient(circle at 50% 60%,#ff7a1c 0,#9a1f3a 40%,#1d1250 80%)}
+.theme-lysaya{background-image:radial-gradient(rgba(255,180,90,.12) 1.5px,transparent 2px),radial-gradient(rgba(120,140,255,.1) 1px,transparent 1.5px);background-size:23px 23px,37px 37px}
+.theme-lysaya h1{background:linear-gradient(90deg,#ffb04a,#ff5a1c,#7a8aff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.theme-lysaya .photo{border-radius:50%;aspect-ratio:1}
+.theme-lysaya .keyfacts li{border:1px solid var(--line);background:linear-gradient(160deg,rgba(255,138,28,.16),rgba(90,125,255,.08))}
+
+/* Schott Zwiesel — техничный хрусталь */
+.theme-schott{--bg:#f4f8fb;--ink:#0d1b2a;--muted:#536273;--accent:#0077b6;--accent2:#00b4d8;--panel:#fff;--line:rgba(13,27,42,.12);--font-head:"Jura",sans-serif;--font-body:"Open Sans",sans-serif;--fs:17px;--head-weight:700;--radius:2px;--stroke:#0d1b2a;--mark-bg:rgba(0,180,216,.16);--yr-ink:#0077b6;--bar-bg:#0d1b2a;--photo-bg:linear-gradient(rgba(0,119,182,.06) 1px,transparent 1px) 0 0/20px 20px,linear-gradient(90deg,rgba(0,119,182,.06) 1px,transparent 1px) 0 0/20px 20px,#fff}
+.theme-schott h1{text-transform:uppercase;letter-spacing:.06em}
+.theme-schott .photo{border:1px solid var(--accent)}
+.theme-schott .keyfacts li{border:1px solid var(--line);border-left:4px solid var(--accent)}
+
+/* Gerz — вестервальдская каменная масса */
+.theme-gerz{--bg:#e9e4d6;--ink:#2a2418;--muted:#6a604c;--accent:#2a4fa0;--accent2:#a8642a;--panel:#f6f2e8;--line:rgba(42,79,160,.22);--font-head:"Kelly Slab",serif;--font-body:"Noto Serif",serif;--fs:17.5px;--head-weight:400;--radius:12px;--stroke:#2a4fa0;--mark-bg:rgba(168,100,42,.18);--yr-ink:#a8642a;--bar-bg:#2a4fa0;--photo-bg:radial-gradient(circle at 50% 40%,#fbf7ee,#d9d2c0)}
+.theme-gerz{background-image:radial-gradient(rgba(42,79,160,.06) 2px,transparent 2.5px);background-size:16px 16px}
+.theme-gerz h1{color:var(--accent)}
+.theme-gerz .hero-text::after{content:"";display:block;margin-top:1.4rem;height:12px;width:240px;background:repeating-linear-gradient(90deg,#2a4fa0 0 12px,transparent 12px 18px,#a8642a 18px 30px,transparent 30px 36px)}
+.theme-gerz .keyfacts li{border:2px solid var(--accent);border-radius:30px 6px}
+.theme-gerz .passport{border:2px solid var(--accent)}
+
+/* Bierzug — пивной обоз */
+.theme-bierzug{--bg:#2b1d12;--ink:#f2e6cf;--muted:#c9b28e;--accent:#e0a03a;--accent2:#c8321e;--panel:#3a2817;--line:rgba(224,160,58,.25);--font-head:"Yanone Kaffeesatz",sans-serif;--font-body:"Fira Sans",sans-serif;--fs:17.5px;--head-weight:700;--head-ls:.01em;--radius:6px;--stroke:#f2d9a8;--mark-bg:rgba(224,160,58,.25);--mark-ink:#fff;--bar-bg:#1d130b;--photo-bg:repeating-linear-gradient(90deg,#4a3218 0 18px,#3f2a14 18px 20px)}
+.theme-bierzug h1{font-size:clamp(2.8rem,7vw,5.8rem);text-transform:uppercase;color:var(--accent)}
+.theme-bierzug .hero::after{content:"";position:absolute;left:0;right:0;bottom:-18px;height:8px;background:repeating-linear-gradient(90deg,#e0a03a 0 40px,transparent 40px 52px)}
+.theme-bierzug .keyfacts li{border:1px solid var(--line);border-radius:999px 999px 8px 8px;text-align:center;padding-top:1.6rem}
+
+/* Bohemia Crystal — ар-деко */
+.theme-bohemia{--bg:#0e0d12;--ink:#efe8da;--muted:#a9a091;--accent:#d4af37;--accent2:#c33b52;--panel:#18161e;--line:rgba(212,175,55,.3);--font-head:"Poiret One",sans-serif;--font-body:"Lora",serif;--head-weight:400;--radius:0;--stroke:#e9d79a;--mark-bg:rgba(212,175,55,.2);--mark-ink:#fff;--bar-bg:#0e0d12;--photo-bg:repeating-conic-gradient(from 0deg at 50% 100%,rgba(212,175,55,.12) 0 5deg,transparent 5deg 15deg),#14121a}
+.theme-bohemia h1{font-size:clamp(2.6rem,6.5vw,5.2rem);letter-spacing:.06em;color:#f4e3b0}
+.theme-bohemia .hero-text{border-top:1px solid var(--accent);border-bottom:1px solid var(--accent);padding:2rem 0;background:linear-gradient(90deg,transparent,rgba(212,175,55,.08),transparent)}
+.theme-bohemia .photo{border:1px solid var(--accent);outline:1px solid var(--accent);outline-offset:6px}
+.theme-bohemia .keyfacts li{border:1px solid var(--line);clip-path:polygon(0 12px,12px 0,calc(100% - 12px) 0,100% 12px,100% 100%,0 100%)}
+
+/* Bondware — пиратская карта */
+.theme-pirates{--bg:#e9dcbc;--ink:#2a1d10;--muted:#6b5636;--accent:#8a1f14;--accent2:#1d4a6b;--panel:#f3e8cc;--line:rgba(138,31,20,.25);--font-head:"Underdog",sans-serif;--font-body:"PT Serif",serif;--head-weight:400;--radius:4px;--stroke:#2a1d10;--mark-bg:rgba(138,31,20,.15);--mark-ink:#5a1008;--bar-bg:#2a1d10;--photo-bg:radial-gradient(circle at 50% 45%,#f6ecd2,#d6c094 85%)}
+.theme-pirates{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cpath d='M20 160 q40 -30 80 -10 t80 -30' fill='none' stroke='%238a1f14' stroke-opacity='.12' stroke-width='2' stroke-dasharray='6 6'/%3E%3Cpath d='M150 40 l10 10 m0 -10 l-10 10' stroke='%238a1f14' stroke-opacity='.25' stroke-width='3'/%3E%3C/svg%3E")}
+.theme-pirates h1{font-size:clamp(2.2rem,5.4vw,4.2rem)}
+.theme-pirates .photo{border:3px double var(--ink);border-radius:6px;transform:rotate(-1deg)}
+.theme-pirates .keyfacts li{border:1px dashed var(--accent);background:#f6ecd2}
+.theme-pirates .kicker::before{content:"☠";width:auto;height:auto;background:none;font-size:1.1rem}
+
+/* Royal Doulton — английский паб */
+.theme-doulton{--bg:#12302a;--ink:#f1e9d2;--muted:#b9c2a8;--accent:#d4af37;--accent2:#c84a2a;--panel:#183c34;--line:rgba(212,175,55,.3);--font-head:"Cormorant Unicase",serif;--font-body:"EB Garamond",serif;--fs:20px;--head-weight:700;--radius:2px;--stroke:#f1e0b0;--mark-bg:rgba(212,175,55,.22);--mark-ink:#fff;--bar-bg:#0b1f1b;--photo-bg:radial-gradient(circle at 50% 40%,#2a5a4a,#0d241f 80%)}
+.theme-doulton{background-image:repeating-linear-gradient(90deg,rgba(0,0,0,.12) 0 2px,transparent 2px 60px)}
+.theme-doulton .photo{border:6px solid #5a3a1a;box-shadow:inset 0 0 0 2px var(--accent),0 20px 40px rgba(0,0,0,.4)}
+.theme-doulton .keyfacts li{border:1px solid var(--line);border-top:3px solid var(--accent)}
+
+/* Burleigh — синий английский фаянс */
+.theme-burleigh{--bg:#f7f9fc;--ink:#16305e;--muted:#4f6290;--accent:#2a58a6;--accent2:#6a89c8;--panel:#fff;--line:rgba(42,88,166,.2);--font-head:"Alice",serif;--font-body:"Noto Serif",serif;--fs:17.5px;--head-weight:400;--radius:50px;--stroke:#16305e;--mark-bg:rgba(42,88,166,.12);--yr-ink:#2a58a6;--bar-bg:#16305e;--photo-bg:radial-gradient(circle,#fff 45%,transparent 46%),repeating-conic-gradient(rgba(42,88,166,.18) 0 10deg,transparent 10deg 20deg),#eef3fb}
+.theme-burleigh{background-image:radial-gradient(circle at 10px 10px,rgba(42,88,166,.12) 3px,transparent 3.5px),radial-gradient(circle at 30px 30px,rgba(42,88,166,.08) 6px,transparent 6.5px);background-size:40px 40px}
+.theme-burleigh .photo{border-radius:50%;aspect-ratio:1;border:2px solid var(--accent);outline:8px solid #fff;outline-offset:-14px}
+.theme-burleigh .keyfacts li{border:1px solid var(--line);text-align:center;border-radius:40px}
+
+/* Decodyne — американский поп */
+.theme-decodyne{--bg:#f2f4fa;--ink:#0f1a33;--muted:#4f5a78;--accent:#e8364a;--accent2:#2a5fe0;--panel:#fff;--line:rgba(15,26,51,.14);--font-head:"Jost",sans-serif;--font-body:"Jost",sans-serif;--fs:17.5px;--head-weight:800;--radius:16px;--stroke:#0f1a33;--mark-bg:rgba(232,54,74,.14);--yr-ink:#2a5fe0;--bar-bg:#0f1a33;--photo-bg:radial-gradient(#ffd23f 3px,transparent 3.5px) 0 0/18px 18px,linear-gradient(135deg,#5ad1ff,#9d7bff)}
+.theme-decodyne .photo{border:6px solid #0f1a33}
+.theme-decodyne .keyfacts li{background:#0f1a33;color:#fff;--k-ink:#ff8a98}
+
+/* Английское литьё — латунь */
+.theme-brass{--bg:#231a0e;--ink:#f4e6c2;--muted:#c4ae80;--accent:#d9aa3c;--accent2:#f2d27a;--panel:#2f2414;--line:rgba(217,170,60,.28);--font-head:"Seymour One",sans-serif;--font-body:"Literata",serif;--head-weight:400;--radius:8px;--stroke:#f2d27a;--mark-bg:rgba(217,170,60,.25);--mark-ink:#fff;--bar-bg:#160f07;--photo-bg:radial-gradient(circle at 40% 30%,#6a4a1a,#231a0e 80%)}
+.theme-brass h1{font-size:clamp(2rem,5vw,4rem);background:linear-gradient(180deg,#fff2c4,#d9aa3c 55%,#8a6420);-webkit-background-clip:text;background-clip:text;color:transparent}
+.theme-brass .keyfacts li{background:linear-gradient(145deg,#4a3818,#2a1f0f);border:1px solid #8a6a2a;box-shadow:inset 0 1px 0 rgba(255,230,160,.3)}
+.theme-brass .photo{border:4px solid #b88a2a;box-shadow:inset 0 0 30px rgba(0,0,0,.6)}
+
+/* Художественная керамика */
+.theme-artceramic{--bg:#3a2414;--ink:#f2e2c8;--muted:#c9ad86;--accent:#e0a86a;--accent2:#9ac06a;--panel:#4a3020;--line:rgba(224,168,106,.25);--font-head:"Amatic SC",sans-serif;--font-body:"Alegreya Sans",sans-serif;--fs:18.5px;--head-weight:700;--radius:30px 8px 30px 8px;--stroke:#f2d0a0;--mark-bg:rgba(224,168,106,.25);--mark-ink:#fff;--bar-bg:#2a180c;--photo-bg:radial-gradient(circle at 50% 40%,#6a4024,#2a180c 80%)}
+.theme-artceramic h1{font-size:clamp(3rem,8vw,6rem);line-height:.95;letter-spacing:.02em}
+.theme-artceramic .keyfacts li{border:2px solid var(--line)}
+.theme-artceramic .photo{border-radius:46% 54% 42% 58%/52% 44% 56% 48%}
+
+/* Витязь — былинный */
+.theme-vityaz{--bg:#5a140c;--ink:#f6e2c4;--muted:#e0b890;--accent:#e6b84a;--accent2:#f6e2c4;--panel:#6e1d12;--line:rgba(230,184,74,.3);--font-head:"Ruslan Display",serif;--font-body:"Noto Serif",serif;--fs:18px;--head-weight:400;--radius:4px;--stroke:#f6d896;--mark-bg:rgba(230,184,74,.25);--mark-ink:#fff;--bar-bg:#3a0c06;--photo-bg:radial-gradient(circle at 50% 40%,#8a2a18,#3a0c06 80%)}
+.theme-vityaz{background-image:repeating-linear-gradient(45deg,rgba(230,184,74,.05) 0 2px,transparent 2px 14px),repeating-linear-gradient(-45deg,rgba(230,184,74,.05) 0 2px,transparent 2px 14px)}
+.theme-vityaz .photo{border-radius:50% 50% 8px 8px/36% 36% 8px 8px;border:3px solid var(--accent)}
+.theme-vityaz .keyfacts li{border:1px solid var(--line);background:linear-gradient(#7a2214,#5a140c)}
+
+/* Славянская мастерская — весёлая майолика */
+.theme-slavyansk{--bg:#fff7e0;--ink:#2a1d10;--muted:#6a5534;--accent:#d9302a;--accent2:#2a7a3a;--panel:#fff;--line:rgba(217,48,42,.2);--font-head:"Neucha",cursive;--font-body:"Nunito",sans-serif;--fs:17.5px;--head-weight:400;--radius:24px;--stroke:#2a1d10;--mark-bg:rgba(242,190,40,.4);--yr-ink:#2a7a3a;--bar-bg:#d9302a;--photo-bg:radial-gradient(circle at 50% 45%,#fffbee,#f6d77a 90%)}
+.theme-slavyansk h1{font-size:clamp(2.6rem,6.5vw,5rem)}
+.theme-slavyansk .hero-text::after{content:"";display:block;margin-top:1.2rem;height:22px;width:260px;background:radial-gradient(circle at 11px 11px,#d9302a 5px,transparent 6px) 0 0/44px 22px,radial-gradient(circle at 33px 11px,#2a7a3a 4px,transparent 5px) 0 0/44px 22px}
+.theme-slavyansk .keyfacts li{border:2px solid var(--accent);border-radius:30px}
+.theme-slavyansk .keyfacts li:nth-child(even){border-color:var(--accent2)}
+
+/* Конаково — берёзовый пень */
+.theme-konakovo{--bg:#f8f8f4;--ink:#1d1d1d;--muted:#5d5d55;--accent:#7a4a24;--accent2:#2a2a2a;--panel:#fff;--line:rgba(29,29,29,.14);--font-head:"Bad Script",cursive;--font-body:"PT Serif",serif;--head-weight:400;--radius:10px;--stroke:#1d1d1d;--mark-bg:rgba(122,74,36,.14);--yr-ink:#7a4a24;--bar-bg:#2a2a2a;--photo-bg:#fff}
+.theme-konakovo{background-image:linear-gradient(90deg,transparent 0 92%,rgba(0,0,0,.05) 92%),repeating-linear-gradient(0deg,transparent 0 60px,rgba(0,0,0,.06) 60px 62px,transparent 62px 90px)}
+.theme-konakovo h1{font-size:clamp(2.4rem,6vw,4.6rem);color:var(--accent)}
+.theme-konakovo .photo{border:10px solid #f2f2ec;box-shadow:0 0 0 1px #ccc;background:radial-gradient(circle at 50% 45%,#fff 55%,#eeece4)}
+.theme-konakovo .keyfacts li{border:1px solid var(--line);border-left:8px solid #1d1d1d}
+
+/* ХФЗ — фарфор и виноград */
+.theme-hfz{--bg:#f6f2fa;--ink:#2e1f3a;--muted:#6a5a7a;--accent:#6b3f8a;--accent2:#3f7a3a;--panel:#fff;--line:rgba(107,63,138,.2);--font-head:"Cormorant Infant",serif;--font-body:"Spectral",serif;--fs:18px;--head-weight:700;--radius:18px;--stroke:#6b3f8a;--mark-bg:rgba(107,63,138,.12);--yr-ink:#3f7a3a;--bar-bg:#3a2450;--photo-bg:radial-gradient(circle at 50% 40%,#fff,#e6dcef)}
+.theme-hfz h1{font-style:italic;font-size:clamp(2.4rem,5.8vw,4.6rem)}
+.theme-hfz .keyfacts li{border:1px solid var(--line)}
+.theme-hfz .keyfacts li::before{content:"";position:absolute;right:1rem;top:1rem;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#a07ac0,#5a3f7a)}
+
+/* Опошня — терракота */
+.theme-opishnya{--bg:#c9883a;--ink:#2a1408;--muted:#5a3418;--accent:#2a1408;--accent2:#8a1f0a;--panel:#e0a85a;--line:rgba(42,20,8,.25);--font-head:"Pattaya",sans-serif;--font-body:"PT Sans",sans-serif;--fs:18px;--head-weight:400;--radius:18px;--stroke:#2a1408;--mark-bg:rgba(255,240,200,.45);--yr-ink:#8a1f0a;--bar-bg:#2a1408;--photo-bg:radial-gradient(circle at 50% 40%,#f2c88a,#c9883a)}
+.theme-opishnya .hero-text::after{content:"";display:block;margin-top:1.4rem;height:18px;background:radial-gradient(circle at 9px 9px,#2a1408 3px,transparent 3.5px) 0 0/18px 18px,linear-gradient(#2a1408,#2a1408) 0 50%/100% 2px no-repeat}
+.theme-opishnya .keyfacts li{border:2px solid var(--ink)}
+
+/* Royal Dux — охотничий фарфор */
+.theme-royaldux{--bg:#1f2e22;--ink:#efe9d6;--muted:#b8bea8;--accent:#c9a043;--accent2:#9ac06a;--panel:#26382a;--line:rgba(201,160,67,.28);--font-head:"Marmelad",sans-serif;--font-body:"EB Garamond",serif;--fs:19.5px;--head-weight:400;--radius:10px;--stroke:#f2e6c0;--mark-bg:rgba(201,160,67,.22);--mark-ink:#fff;--bar-bg:#142017;--photo-bg:radial-gradient(circle at 50% 40%,#3a5a3e,#142017 80%)}
+.theme-royaldux .photo{border:2px solid var(--accent);border-radius:50% 50% 10px 10px/30% 30% 10px 10px}
+.theme-royaldux .keyfacts li{border:1px solid var(--line)}
+
+/* Henneberg — тюрингский фарфор */
+.theme-henneberg{--bg:#f6f6f2;--ink:#1d1d1d;--muted:#5e5e56;--accent:#2a5a3a;--accent2:#7a4a24;--panel:#fff;--line:rgba(42,90,58,.2);--font-head:"Oranienbaum",serif;--font-body:"Lora",serif;--head-weight:400;--radius:2px;--stroke:#1d1d1d;--mark-bg:rgba(42,90,58,.12);--yr-ink:#2a5a3a;--bar-bg:#2a5a3a;--photo-bg:repeating-linear-gradient(0deg,#fff 0 26px,#2a2a2a 26px 28px,#fff 28px 54px,#3a3a3a 54px 55px,#fff 55px 80px)}
+.theme-henneberg h1{font-size:clamp(2.4rem,6vw,4.8rem);color:var(--accent)}
+.theme-henneberg .photo::before{content:"";position:absolute;inset:12%;background:#fff;border-radius:50%;z-index:-1;box-shadow:0 0 0 2px var(--accent)}
+.theme-henneberg .keyfacts li{border-bottom:3px solid var(--accent);box-shadow:0 10px 24px rgba(0,0,0,.05)}
+
+/* ОСЗ — фирменная кружка пивоварни */
+.theme-baltika{--bg:#f2f5fa;--ink:#0d2a5c;--muted:#4a5f84;--accent:#0d2a5c;--accent2:#c9a043;--panel:#fff;--line:rgba(13,42,92,.15);--font-head:"Roboto Condensed",sans-serif;--font-body:"Roboto",sans-serif;--fs:17px;--head-weight:700;--radius:6px;--stroke:#0d2a5c;--mark-bg:rgba(201,160,67,.2);--yr-ink:#c9a043;--bar-bg:#0d2a5c;--photo-bg:linear-gradient(180deg,#e6edf8,#c2d0e8)}
+.theme-baltika .hero{background:#0d2a5c;color:#fff;padding:clamp(1.6rem,4vw,3rem);border-radius:14px;overflow:hidden}
+.theme-baltika .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40'%3E%3Cpath d='M0 20 q30 -16 60 0 t60 0 v20 h-120z' fill='%23c9a043' fill-opacity='.35'/%3E%3C/svg%3E") repeat-x}
+.theme-baltika .hero .kicker,.theme-baltika .hero .tags span{color:#e6c46a;border-color:#e6c46a}
+.theme-baltika .hero .sub{color:rgba(255,255,255,.8)}
+.theme-baltika .keyfacts li{border-top:4px solid var(--accent2)}
+
+/* Трактирный фарфор */
+.theme-trakt{--bg:#f7f0e2;--ink:#3a1a10;--muted:#7a5a48;--accent:#c8321e;--accent2:#2f5f8a;--panel:#fffaf0;--line:rgba(200,50,30,.2);--font-head:"Ledger",serif;--font-body:"Arsenal",sans-serif;--fs:18.5px;--head-weight:400;--radius:8px;--stroke:#3a1a10;--mark-bg:rgba(200,50,30,.12);--yr-ink:#2f5f8a;--bar-bg:#8a1f12;--photo-bg:repeating-linear-gradient(0deg,rgba(200,50,30,.12) 0 18px,transparent 18px 36px),repeating-linear-gradient(90deg,rgba(200,50,30,.12) 0 18px,transparent 18px 36px),#fffaf0}
+.theme-trakt .photo{border:8px solid #fff;box-shadow:0 0 0 1px rgba(200,50,30,.4),0 20px 40px rgba(58,26,16,.15)}
+.theme-trakt .keyfacts li{border:1px solid var(--line);border-top:5px solid var(--accent)}
+
+/* Рейнский сувенир — открытка */
+.theme-rhine{--bg:#6a1428;--ink:#fbeedd;--muted:#e6c0b4;--accent:#f2c14e;--accent2:#8fd0a0;--panel:#7e1d33;--line:rgba(242,193,78,.3);--font-head:"Lobster",cursive;--font-body:"Lora",serif;--head-weight:400;--radius:14px;--stroke:#fbe6b0;--mark-bg:rgba(242,193,78,.25);--mark-ink:#fff;--bar-bg:#4a0c1a;--photo-bg:linear-gradient(180deg,#8ac2e8 0 50%,#5a8a4a 50% 62%,#8a1f33 62%)}
+.theme-rhine h1{font-size:clamp(2.4rem,6vw,4.8rem);color:var(--accent)}
+.theme-rhine .photo{border:10px solid #fbeedd;border-radius:4px;transform:rotate(1.5deg);box-shadow:0 20px 40px rgba(0,0,0,.35)}
+.theme-rhine .keyfacts li{border:1px dashed var(--line)}
+
+/* Nachtmann · Joska — накладной хрусталь */
+.theme-nachtmann{--bg:#0c0a14;--ink:#f0eaf4;--muted:#a99db8;--accent:#e0405a;--accent2:#5a8aff;--panel:#16121f;--line:rgba(224,64,90,.25);--font-head:"Playfair Display",serif;--font-body:"Raleway",sans-serif;--fs:17.5px;--head-weight:700;--radius:4px;--stroke:#f8d4dc;--mark-bg:linear-gradient(90deg,rgba(224,64,90,.35),rgba(90,138,255,.35));--mark-ink:#fff;--bar-bg:rgba(12,10,20,.85);--photo-bg:radial-gradient(circle at 50% 35%,rgba(224,64,90,.35),transparent 60%),radial-gradient(circle at 30% 80%,rgba(90,138,255,.25),transparent 50%),#0c0a14}
+.theme-nachtmann h1{font-style:italic;font-size:clamp(2.6rem,6.5vw,5.2rem);background:linear-gradient(100deg,#ff8aa0,#fff 45%,#8ab0ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.theme-nachtmann .photo{clip-path:polygon(50% 0,100% 18%,100% 82%,50% 100%,0 82%,0 18%)}
+.theme-nachtmann .keyfacts li{border:1px solid var(--line);background:linear-gradient(135deg,rgba(224,64,90,.14),rgba(90,138,255,.08))}
+
+/* Böckling · Ritzenhoff — эмалевая роспись */
+.theme-bockling{--bg:#fbf3c4;--ink:#1f2a14;--muted:#5a6436;--accent:#2f4f2a;--accent2:#b8892b;--panel:#fffbe6;--line:rgba(47,79,42,.22);--font-head:"Vollkorn SC",serif;--font-body:"Vollkorn",serif;--fs:19px;--head-weight:700;--radius:8px;--stroke:#1f2a14;--mark-bg:rgba(184,137,43,.2);--yr-ink:#b8892b;--bar-bg:#2f4f2a;--photo-bg:radial-gradient(circle at 50% 40%,#fffbe6,#e8d86a)}
+.theme-bockling .hero-text::after{content:"";display:block;margin-top:1.4rem;width:200px;height:20px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='20'%3E%3Cpath d='M2 18 l8 -16 8 16z M22 18 l8 -16 8 16z' fill='%232f4f2a'/%3E%3C/svg%3E") repeat-x}
+.theme-bockling .keyfacts li{border:1px solid var(--line);border-top:4px solid var(--accent2)}
+
+@media (max-width:560px){
+  .theme-festival .hero,.theme-baltika .hero{padding:1.3rem 1.1rem 1.6rem;border-radius:14px}
+  .theme-bierzug h1,.theme-artceramic h1{font-size:2.6rem!important}
+  .theme-pirates .photo,.theme-rhine .photo{transform:none}
+}

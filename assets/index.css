@@ -38,7 +38,7 @@ section.block{max-width:1240px;margin:0 auto;padding:clamp(3.5rem,7vw,6rem) clam
 .sec-head p{max-width:460px;margin:0;color:#bcae95}
 
 /* --- залы --- */
-.halls{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.halls{display:grid;grid-template-columns:repeat(5,1fr);gap:1.1rem}
 .hall{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:270px;padding:1.6rem;border-radius:200px 200px 14px 14px;background:linear-gradient(180deg,var(--oak2),#18110b);border:1px solid var(--line);text-decoration:none;overflow:hidden;transition:transform .25s,border-color .25s}
 .hall:hover{transform:translateY(-4px);border-color:var(--brass)}
 .hall .count{font-family:var(--head);font-size:4rem;line-height:1;color:var(--brass);text-align:center;margin-top:1.2rem}
@@ -73,11 +73,11 @@ section.block{max-width:1240px;margin:0 auto;padding:clamp(3.5rem,7vw,6rem) clam
 
 /* --- хронология --- */
 .timeline{position:relative;overflow-x:auto;padding:1rem 0 1.5rem;-webkit-overflow-scrolling:touch}
-.tl{position:relative;min-width:980px;height:250px}
+.tl{position:relative;min-width:1500px;height:250px}
 .tl .axis{position:absolute;left:0;right:0;top:150px;height:2px;background:linear-gradient(90deg,transparent,var(--brass) 4%,var(--brass) 96%,transparent)}
 .tl .dec{position:absolute;top:160px;transform:translateX(-50%);font-family:var(--head);font-size:1.25rem;color:var(--brass2)}
 .tl .tick{position:absolute;top:144px;width:1px;height:14px;background:var(--brass)}
-.tl a.dot{position:absolute;transform:translate(-50%,0);width:16px;height:16px;border-radius:50%;background:var(--cacc);box-shadow:0 0 0 3px #140f0a,0 0 0 4px var(--cacc);text-decoration:none}
+.tl a.dot{position:absolute;transform:translate(-50%,0);width:12px;height:12px;border-radius:50%;background:var(--cacc);box-shadow:0 0 0 3px #140f0a,0 0 0 4px var(--cacc);text-decoration:none}
 .tl a.dot:hover,.tl a.dot:focus{z-index:5}
 .tl a.dot span{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);white-space:nowrap;background:var(--cream);color:#2a1d10;padding:.3rem .6rem;border-radius:6px;font-size:.75rem;font-weight:700;opacity:0;pointer-events:none;transition:opacity .15s}
 .tl a.dot:hover span,.tl a.dot:focus span{opacity:1}
@@ -91,7 +91,8 @@ section.block{max-width:1240px;margin:0 auto;padding:clamp(3.5rem,7vw,6rem) clam
 footer{margin-top:clamp(4rem,7vw,6rem);padding:2.5rem 1rem 3rem;text-align:center;border-top:1px solid var(--line);color:#9b8d74;font-size:.85rem}
 footer .mark{font-family:var(--head);font-size:1.5rem;color:var(--brass2);display:block;margin-bottom:.3rem}
 
-@media (max-width:980px){.halls{grid-template-columns:repeat(2,1fr)}.ticket{grid-template-columns:repeat(3,1fr)}.ticket div:nth-child(3){border-right:0}.ticket div:nth-child(n+4){border-top:2px dashed rgba(42,29,16,.18)}.rules{grid-template-columns:1fr}}
+@media (max-width:1100px){.halls{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:980px){.ticket{grid-template-columns:repeat(3,1fr)}.ticket div:nth-child(3){border-right:0}.ticket div:nth-child(n+4){border-top:2px dashed rgba(42,29,16,.18)}.rules{grid-template-columns:1fr}}
 @media (max-width:640px){.nav{padding:.5rem 1rem}.nav ul{display:none}.halls{grid-template-columns:1fr 1fr;gap:.8rem}.hall{min-height:200px;padding:1rem .8rem;border-radius:120px 120px 12px 12px}.hall .count{font-size:2.8rem;margin-top:.6rem}.hall h3{font-size:1.2rem}.hall p{font-size:.76rem}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.card h3{font-size:1.05rem}.card .body{padding:.75rem .8rem .9rem}.card .meta{font-size:.7rem}.card .plate{font-size:.72rem;top:.5rem;left:.5rem}.chip{padding:.55rem .85rem}.facade h1{font-size:clamp(2.4rem,12vw,3.4rem)}.facade .lede{font-size:.98rem}.sec-head{gap:.8rem}.tl-hint{display:block}.ticket{grid-template-columns:1fr 1fr;margin:-1.6rem 1rem 0}.ticket div{border-right:0!important;border-top:2px dashed rgba(42,29,16,.18)}.ticket div:first-child{grid-column:1/-1;border-top:0}.search{margin-left:0;width:100%}.search input{width:100%}}
 
 .tl-hint{display:none;font-size:.78rem;color:#a99b82;margin:-1rem 0 .6rem}
@@ -120,3 +121,18 @@ footer .mark{font-family:var(--head);font-size:1.5rem;color:var(--brass2);displa
 .timeline.in a.dot{animation:pop .5s cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(var(--i) * 45ms)}
 .js .timeline:not(.in) a.dot{transform:translate(-50%,0) scale(0)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.facade .building path{stroke-dashoffset:0}.facade .building text,.facade .building g g{opacity:1}.js .reveal{opacity:1;transform:none}.js .timeline:not(.in) a.dot{transform:translate(-50%,0)}}
+
+/* --- лента по десятилетиям --- */
+.decades{display:grid;grid-template-columns:repeat(14,minmax(66px,1fr));gap:8px;align-items:end;min-width:1040px;padding:1.5rem 0 0;border-bottom:2px solid var(--brass)}
+.dc{display:flex;flex-direction:column;align-items:center;gap:.45rem;padding-bottom:.6rem}
+.dc .dd{display:flex;flex-wrap:wrap-reverse;justify-content:center;gap:5px;max-width:84px}
+.dc b{font-family:var(--head);font-size:1.25rem;color:var(--brass2);line-height:1;min-height:1.2rem}
+.dc>span{font-size:.75rem;letter-spacing:.08em;color:#a99b82}
+a.d{position:relative;display:block;width:12px;height:12px;border-radius:50%;background:var(--cacc);box-shadow:0 0 0 2px #140f0a,0 0 0 3px color-mix(in srgb,var(--cacc) 60%,transparent);text-decoration:none}
+a.d span{position:absolute;left:50%;bottom:20px;transform:translateX(-50%);white-space:nowrap;background:var(--cream);color:#2a1d10;padding:.3rem .6rem;border-radius:6px;font-size:.75rem;font-weight:700;opacity:0;pointer-events:none;transition:opacity .15s;z-index:5}
+a.d:hover span,a.d:focus span{opacity:1}
+a.d:hover{transform:scale(1.4)}
+.timeline.in a.d{animation:popd .45s cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(var(--i) * 12ms)}
+@keyframes popd{from{transform:scale(0)}to{transform:scale(1)}}
+.js .timeline:not(.in) a.d{transform:scale(0)}
+@media (prefers-reduced-motion:reduce){.js .timeline:not(.in) a.d{transform:none}}
